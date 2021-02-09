@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        tools:layout="@layout/main_fragment"
+        android:name="com.sanmed.pushnotification.ui.main.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/notification_fragment"
+        android:id="@+id/notificationFragment"
+        android:name="com.sanmed.pushnotification.ui.notification.NotificationFragment"
+        android:label="NotificationFragment" >
+        <argument
+            android:name="email"
+            app:argType="string" />
+    </fragment>
+</navigation>

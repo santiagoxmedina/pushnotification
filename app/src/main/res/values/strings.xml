@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">PushNotification</string>
+    <string name="email">Email</string>
+    <string name="join">Ingresar</string>
+    <string name="invalid_email">¡Correo no válido!</string>
+    <string name="to_email">Email del destinatario</string>
+    <string name="title">Titulo</string>
+    <string name="message">Mensaje</string>
+    <string name="send">Enviar</string>
+    <string name="welcome">Hola %1$s</string>
 </resources>
